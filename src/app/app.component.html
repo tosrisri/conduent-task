@@ -1,0 +1,439 @@
+<!-- mainWrapper -->
+<div id="mainWrapper">
+  <app-header></app-header>
+  <!-- Innercont -->
+  <div id="innerCont" class="container-0">
+    <app-case-details></app-case-details>
+    <app-action-prompt></app-action-prompt>
+  </div>
+  <!-- /Innercont -->
+  <!-- innerCont-1 -->
+
+  <div id="innerCont-1" class="container-1">
+    <!-- item-1a -->
+    <div class="safe-zone mr20n">
+      <div class="item-1 item-1a">
+        <!-- item-1's 1st child -->
+        <div class="item-2">
+
+          <div class="item-3 item-3a">
+            <!-- small-tabs -->
+            <nav id="secNav" role="navigation">
+              <ul>
+                <li class="active"><a href="/" title="Lien Details">Lien Details</a></li>
+                <li><a href="/" title="Claims">Claims </a></li>
+                <li><a href="/" title="Documents">Documents </a></li>
+                <li><a href="/" title="Case History">Case History</a></li>
+                <li><a href="/" title="Case Notes">Case Notes </a></li>
+                <li><a href="/" title="Settlements">Settlements</a></li>
+                <li><a href="/" title="Accident Details">Accident Details</a></li>
+              </ul>
+            </nav>
+            <!-- /small-tabs -->
+          </div>
+          <div class="item-3 item-3b">
+            <!-- vdl-cont -->
+            <div class="vdl-cont">
+              <div>
+                <p>View Deactivated Liens</p>
+              </div>
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                <label class="onoffswitch-label" for="myonoffswitch"></label>
+              </div>
+            </div>
+            <!-- /vdl-cont -->
+          </div>
+        </div>
+        <!-- /item-1's 1st child -->
+
+        <!-- item-1's 2nd child -->
+        <div class="item-2">
+          <!-- EIMI -->
+          <div class="eim-insurance-cont">
+            <div class="title-bar" aria-hidden="true"></div>
+            <h3>EIM Insurance <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
+                  src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+            <div class="geico-cont">
+              <h4>Geico</h4>
+              <a href="#" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
+              <a href="#" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
+              <a href="#" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
+              <a href="#" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
+              <a href="#" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
+            </div>
+            <div class="geico-cont-body">
+              <ul>
+                <li class="w100">
+                  <p>Main Phone Number<span> 800-207-7847</span></p>
+                </li>
+                <li>
+                  <p>Claim<span>1009982736364</span></p>
+                  <p>Type<span>[Claim Type]</span></p>
+                </li>
+                <li>
+                  <p>Status<span>Acknowledged</span></p>
+                  <p>Primacy<span>[value]</span></p>
+                </li>
+                <li>
+                  <p>Policy<span>90099000</span></p>
+                </li>
+                <li>
+                  <p><a href="#" title="some title"><img src="/src/assets/images/icon-s-add.jpg" height="25" width="25"
+                        alt="add" /></a>
+                    <a href="#" title="some title"><img src="/src/assets/images/icon-s-edit.jpg" height="25" width="25"
+                        alt="edit" /></a>
+                    <a href="#" title="some title"><img src="/src/assets/images/icon-s-remove.jpg" height="25"
+                        width="25" alt="remove" /></a>
+                    Coverage<span>MP</span></p>
+                </li>
+
+                <li>
+                  <p>Status <span>Open</span></p>
+                </li>
+                <li class="w100">
+                  <p>Same adjuster for all coverages<span><input type="checkbox" name="sacover" value="cover"></span>
+                  </p>
+                </li>
+                <li class="w100">
+                  <p><a href="#" title="some title"><img src="/src/assets/images/icon-add.jpg" alt="add" /></a>
+                    <a href="#" title="some title"><img src="/src/assets/images/icon-edit.jpg" alt="edit" /></a>
+                    <a href="#" title="some title"><img src="/src/assets/images/icon-remove.jpg" alt="remove" /></a>
+                    Same adjuster for all coverages</p>
+                </li>
+                <li>
+                  <p>Phone<span>123-456-7890</span></p>
+                  <p>Type<span>123-456-7890</span></p>
+                </li>
+                <li class="w100">
+                  <p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /EIMI -->
+        </div>
+        <!-- /item-1's 2nd child -->
+        <!-- item-1's 3rd child -->
+        <div class="item-2 ">
+          <!-- TPI -->
+          <div class="tp-insurance-cont">
+            <div class="title-bar" aria-hidden="true"></div>
+            <h3>TP Insurance <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
+                  src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+            <div class="geico-cont">
+              <h4 class="text-left">[insurance company longname] two line example [insurance company longname]
+                two line example</h4>
+            </div>
+            <div class="geico-cont-body">
+              <form onSubmit="submit()">
+                <ul>
+                  <li class="w100">
+                    <label for="phonenumber">Main Phone Number
+                      <input type="text" id="phonenumber" name="phonenumber" accesskey="p" tabindex="1">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="claim">Claim
+                      <input type="text" id="claim" name="claim" accesskey="c" tabindex="2">
+                    </label>
+                    <label for="claim">Type
+                      <select id="claim" name="claim">
+                        <option value="" disabled selected>- Select Type -</option>
+                        <option value="1">Type 1</option>
+                        <option value="2">Type 2</option>
+                        <option value="3">Type 3</option>
+                      </select>
+                    </label>
+                  </li>
+                  <li><label for="claim">Status
+                      <select id="Status" name="Status">
+                        <option value="" disabled selected>- Select Status -</option>
+                        <option value="1">Type 1</option>
+                        <option value="2">Type 2</option>
+                        <option value="3">Type 3</option>
+                      </select>
+                    </label>
+                    <label for="Primary">Primary
+                      <input type="text" id="Primary" name="Primary" accesskey="c" tabindex="2">
+                    </label>
+                  </li>
+                  <li class="w100">
+                    <label for="Policy">Policy
+                      <input type="text" id="Policy" name="Policy" tabindex="2">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="Coverage">Coverage
+                      <select id="Coverage" name="Coverage">
+                        <option value="" disabled selected>- Select Status -</option>
+                        <option value="1">Type 1</option>
+                        <option value="2">Type 2</option>
+                        <option value="3">Type 3</option>
+                      </select>
+                    </label>
+                    <label for="CoverageStatus">CoverageStatus
+                      <select id="CoverageStatus" name="CoverageStatus">
+                        <option value="" disabled selected>- Select Status -</option>
+                        <option value="1">Type 1</option>
+                        <option value="2">Type 2</option>
+                        <option value="3">Type 3</option>
+                      </select>
+                    </label>
+                  </li>
+
+                  <li>
+                    <label for="paidoutdate">Paid Out Date
+                      <input type="text" id="paidoutdate" name="paidoutdate" tabindex="2">
+                    </label>
+                    <label for="Limits">Limits
+                      <input type="text" id="Limits" name="Limits" tabindex="2">
+                    </label>
+                  </li>
+                  <li class="w100">
+                    <label for="adjuster2">Same adjuster for all coverages <input type="checkbox" name="adjuster2"
+                        id="adjuster2" value="cover">
+                    </label>
+                  </li>
+                  <li class="w100">
+                    <label for="Adjuster">Adjuster
+                      <input type="text" id="Adjuster" name="Adjuster" tabindex="2">
+                    </label>
+                  </li>
+                  <li>
+                    <label for="Phone">Phone
+                      <input type="text" id="Phone" name="Phone" tabindex="2">
+                    </label>
+                    <label for="Fax">Fax
+                      <input type="text" id="Fax" name="Fax" tabindex="2">
+                    </label>
+                  </li>
+                  <li class="w100">
+                    <label for="Email">Email
+                      <input type="text" id="Email" name="Email" tabindex="2">
+                    </label>
+                  </li>
+                </ul>
+              </form>
+            </div>
+          </div>
+          <!-- /TPI -->
+        </div>
+        <!-- /item-1's 3rd child -->
+        <!-- item-1's 4th child -->
+        <div class="item-2">
+            <!-- EIM-Attorney -->
+            <div class="eim-insurance-cont">
+                <div class="title-bar" aria-hidden="true"></div>
+                <h3>EIM Attorney <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
+                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+                <div class="geico-cont">
+                  <h4>[attorney company extra longname]</h4>
+                  <a href="#" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
+                  <a href="#" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
+                  <a href="#" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
+                  <a href="#" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
+                  <a href="#" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
+                </div>
+                <div class="geico-cont-body">
+                  <ul>
+                    <li class="w100">
+                      <p>Main Phone Number<span> 800-207-7847</span></p>
+                    </li>
+                    <li>
+                      <p>Claim<span>1009982736364</span></p>
+                      <p>Type<span>[Claim Type]</span></p>
+                    </li>
+                    <li>
+                      <p>Status<span>Acknowledged</span></p>
+                      <p>Primacy<span>[value]</span></p>
+                    </li>
+                    <li>
+                      <p>Policy<span>90099000</span></p>
+                    </li>
+                    <li>
+                      <p><a href="#" title="some title"><img src="/src/assets/images/icon-s-add.jpg" height="25" width="25"
+                            alt="add" /></a>
+                        <a href="#" title="some title"><img src="/src/assets/images/icon-s-edit.jpg" height="25" width="25"
+                            alt="edit" /></a>
+                        <a href="#" title="some title"><img src="/src/assets/images/icon-s-remove.jpg" height="25"
+                            width="25" alt="remove" /></a>
+                        Coverage<span>MP</span></p>
+                    </li>
+    
+                    <li>
+                      <p>Status <span>Open</span></p>
+                    </li>
+                    <li class="w100">
+                      <label for="adjuster3">Same adjuster for all coverages <input type="checkbox" name="adjuster3"
+                        id="adjuster3" value="cover">
+                    </label>                      
+                    </li>
+                    <li class="w100">
+                      <p><a href="#" title="some title"><img src="/src/assets/images/icon-add.jpg" alt="add" /></a>
+                        <a href="#" title="some title"><img src="/src/assets/images/icon-edit.jpg" alt="edit" /></a>
+                        <a href="#" title="some title"><img src="/src/assets/images/icon-remove.jpg" alt="remove" /></a>
+                        Same adjuster for all coverages</p>
+                    </li>
+                    <li>
+                      <p>Phone<span>123-456-7890</span></p>
+                      <p>Type<span>123-456-7890</span></p>
+                    </li>
+                    <li class="w100">
+                      <p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- /EIM-Attorney -->
+        </div>
+        <!-- /item-1's 4th child -->
+        <!-- item-1's 5th child -->
+        <div class="item-2">
+            <!-- TP-Attorney -->
+            <div class="tp-insurance-cont">
+                <div class="title-bar" aria-hidden="true"></div>
+                <h3>TP Attorney <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
+                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+                <div class="geico-cont">
+                  <h4 class="text-left">[attorney company longname]</h4>
+                </div>
+                <div class="geico-cont-body">
+                  <form onSubmit="submit()">
+                    <ul>
+                      <li class="w100">
+                        <label for="phonenumber">Main Phone Number
+                          <input type="text" id="phonenumber" name="phonenumber" accesskey="p" tabindex="1">
+                        </label>
+                      </li>
+                      <li>
+                        <label for="claim">Claim
+                          <input type="text" id="claim" name="claim" accesskey="c" tabindex="2">
+                        </label>
+                        <label for="claim">Type
+                          <select id="claim" name="claim">
+                            <option value="" disabled selected>- Select Type -</option>
+                            <option value="1">Type 1</option>
+                            <option value="2">Type 2</option>
+                            <option value="3">Type 3</option>
+                          </select>
+                        </label>
+                      </li>
+                      <li><label for="claim">Status
+                          <select id="Status" name="Status">
+                            <option value="" disabled selected>- Select Status -</option>
+                            <option value="1">Type 1</option>
+                            <option value="2">Type 2</option>
+                            <option value="3">Type 3</option>
+                          </select>
+                        </label>
+                        <label for="Primary">Primary
+                          <input type="text" id="Primary" name="Primary" accesskey="c" tabindex="2">
+                        </label>
+                      </li>
+                      <li class="w100">
+                        <label for="Policy">Policy
+                          <input type="text" id="Policy" name="Policy" tabindex="2">
+                        </label>
+                      </li>
+                      <li>
+                        <label for="Coverage">Coverage
+                          <select id="Coverage" name="Coverage">
+                            <option value="" disabled selected>- Select Status -</option>
+                            <option value="1">Type 1</option>
+                            <option value="2">Type 2</option>
+                            <option value="3">Type 3</option>
+                          </select>
+                        </label>
+                        <label for="CoverageStatus">CoverageStatus
+                          <select id="CoverageStatus" name="CoverageStatus">
+                            <option value="" disabled selected>- Select Status -</option>
+                            <option value="1">Type 1</option>
+                            <option value="2">Type 2</option>
+                            <option value="3">Type 3</option>
+                          </select>
+                        </label>
+                      </li>
+    
+                      <li>
+                        <label for="paidoutdate">Paid Out Date
+                          <input type="text" id="paidoutdate" name="paidoutdate" tabindex="2">
+                        </label>
+                        <label for="Limits">Limits
+                          <input type="text" id="Limits" name="Limits" tabindex="2">
+                        </label>
+                      </li>
+                      <li class="w100">
+                        <label for="adjuster2">Same adjuster for all coverages <input type="checkbox" name="adjuster2"
+                            id="adjuster2" value="cover">
+                        </label>
+                      </li>
+                      <li class="w100">
+                        <label for="Adjuster">Adjuster
+                          <input type="text" id="Adjuster" name="Adjuster" tabindex="2">
+                        </label>
+                      </li>
+                      <li>
+                        <label for="Phone">Phone
+                          <input type="text" id="Phone" name="Phone" tabindex="2">
+                        </label>
+                        <label for="Fax">Fax
+                          <input type="text" id="Fax" name="Fax" tabindex="2">
+                        </label>
+                      </li>
+                      <li class="w100">
+                        <label for="Email">Email
+                          <input type="text" id="Email" name="Email" tabindex="2">
+                        </label>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+              <!-- /TP-Attorney -->
+        </div>
+        <!-- /item-1's 5th child -->
+      </div>
+    </div>
+    <!-- /item-1a -->
+    <!-- item-1b -->
+    <div class="safe-zone">
+      <div class="item-1 item-1b">
+        <div class="box">
+          <!-- Shead-->
+          <div class="shead-cont">
+            <div class="title-bar" aria-hidden="true"></div>
+            <h3>Special Handling <a class="toggle-btn" href="javscript:void()" title="Collapse"><img src="/src/assets/images/icon-toggle-down.jpg"/></a></h3>
+            <div class="shead-cont-body">
+                <p >Settlement authority threshold - 20%</p>
+            </div>
+          </div>
+          <!-- /Shead-->
+        </div>
+        <div class="box">box-1</div>
+        <div class="box">box-1</div>
+      </div>
+
+
+
+    </div>
+    <!-- /item-1b -->
+  </div>
+  <!-- /innerCont-1 -->
+
+<!-- footer -->
+<footer id="footer">
+  <div class="footer-cont">
+    <div>
+      <p>&copy; 2019 Conduent, Inc. All rights reserved. <a href="#" title="Privacy">Privacy</a> | <a href="#" title="Legal">Legal</a></p>
+    </div>
+    <div>
+      <p>Powered by Earth, Inc.</p>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+
+
+</div>
+<!-- /mainWrapper -->
