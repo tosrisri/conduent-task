@@ -9,6 +9,8 @@ import { SpecialHandlingComponent } from './special-handling/special-handling.co
 import { FooterComponent } from './footer/footer.component';
 import { TpAttorneyComponent } from './tp-attorney/tp-attorney.component';
 import { EimAttorneyComponent } from './eim-attorney/eim-attorney.component';
+import { QueuedActionsComponent } from './queued-actions/queued-actions.component';
+import { SummaryTrackerComponent } from './summary-tracker/summary-tracker.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { EimAttorneyComponent } from './eim-attorney/eim-attorney.component';
     SpecialHandlingComponent,
     FooterComponent,
     TpAttorneyComponent,
-    EimAttorneyComponent
+    EimAttorneyComponent,
+    QueuedActionsComponent,
+    SummaryTrackerComponent
   ],
   imports: [
     BrowserModule

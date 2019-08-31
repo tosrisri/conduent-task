@@ -2,7 +2,7 @@
   <!-- Shead-->
   <div class="shead-cont">
     <div class="title-bar" aria-hidden="true"></div>
-    <h3>Special Handling
+    <h3 (click)="toogleChild()">Special Handling
       <a class="toggle-btn" (click)="toogleChild()" [ngClass]="{'arrow-down':!showChild, 'arrow-up':showChild}" href="javscript:void()" title="Collapse">&nbsp;</a></h3>
     <div class="shead-cont-body" *ngIf="showChild">
       <p>Settlement authority threshold - 20%</p>

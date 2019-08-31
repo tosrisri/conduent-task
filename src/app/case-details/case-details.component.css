@@ -1,0 +1,4 @@
+#caseCont h3 span, #statusCont h3 span, #accidentCont h3 span, #benefitCont h3 span {
+    color: #0047ba;
+    padding-left: 0.5rem;
+}

@@ -1,0 +1,16 @@
+/* shead-cont  */
+.toggle-btn {
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-decoration: none;
+}
+.arrow-down {
+    background: #ccc url('/src/assets/images/icon-toggle-down.jpg') top left no-repeat;
+}
+.arrow-up {
+    background: #ccc url('/src/assets/images/icon-toggle-up.jpg') top left no-repeat;
+}
+.shead-cont-body {
+    display: block;
+}

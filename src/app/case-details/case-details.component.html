@@ -7,19 +7,19 @@
             <section id="caseCont">                
               <div class="safe-zone">
                   <div class="bar-cont"><span class="blue-bar" aria-hidden="true"></span></div>                  
-                <h3>Case ID <span>1009951</span></h3>
+                <h3>Case ID <span>{{caseID}}</span></h3>
                 <ul class="case-data">
                   <li>
-                    <p>File ID<span>00000000000</span></p>
+                    <p>File ID<span>{{ fileID }}</span></p>
                   </li>
                   <li>
-                    <p>Client ID<span>00098</span></p>
+                    <p>Client ID<span>{{clientID}}</span></p>
                   </li>
                   <li>
-                    <p>Client Name<span>Client Name [client_company_longname]</span></p>
+                    <p>Client Name<span>{{clientName}}</span></p>
                   </li>
                   <li>
-                    <p>Funding Type<span>[funding_type]</span></p>
+                    <p>Funding Type<span>{{fundingType}}</span></p>
                   </li>
                 </ul>
               </div>
@@ -31,20 +31,19 @@
           <div class="item">
             <section id="statusCont">
               <div class="safe-zone">
-
-                <h3>Status <span>[Status] [sub status]</span></h3>
+                <h3>Status <span>{{caseStatus}}</span></h3>
                 <ul class="status-data">
                   <li>
-                    <p>Group ID<span>JH788787</span></p>
+                    <p>Group ID<span>{{groupID}}</span></p>
                   </li>
                   <li>
-                    <p>Group Name<span>[group_company_longname]</span></p>
+                    <p>Group Name<span>{{groupName}}</span></p>
                   </li>
                   <li>
-                    <p>Claim Office ID<span>90099000</span></p>
+                    <p>Claim Office ID<span>{{claimOfficeID}}</span></p>
                   </li>
                   <li>
-                    <p>Claim Office Name<span>[office_company_longname]</span></p>
+                    <p>Claim Office Name<span>{{claimOffice}}</span></p>
                   </li>
                 </ul>
               </div>

@@ -547,7 +547,10 @@ body {
         margin-left: 1rem;
     }
 
-
+/* shead-cont  */
+.shead-cont h3 {
+    cursor: pointer;
+}
 
     /* Debug(temp) */
     .brdrs {

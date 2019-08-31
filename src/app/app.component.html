@@ -15,7 +15,6 @@
       <div class="item-1 item-1a">
         <!-- item-1's 1st child -->
         <div class="item-2">
-
           <div class="item-3 item-3a">
             <!-- small-tabs -->
             <nav id="secNav" role="navigation">
@@ -130,61 +129,61 @@
                 <ul>
                   <li class="w100">
                     <label for="phonenumber">Main Phone Number
-                      <input type="text" id="phonenumber" name="phonenumber" accesskey="p" tabindex="1">
+                      <input type="number" id="phonenumber" name="phonenumber" placeholder="000-000-0000" accesskey="p" tabindex="1">
                     </label>
                   </li>
                   <li>
                     <label for="claim">Claim
-                      <input type="text" id="claim" name="claim" accesskey="c" tabindex="2">
+                      <input type="number" id="claim" name="claim" placeholder="1009982736364" accesskey="c" tabindex="2">
                     </label>
                     <label for="claim">Type
                       <select id="claim" name="claim">
-                        <option value="" disabled selected>- Select Type -</option>
+                        <option value="" disabled>- Select Type -</option>
                         <option value="1">Type 1</option>
-                        <option value="2">Type 2</option>
+                        <option value="2" selected>Type 2</option>
                         <option value="3">Type 3</option>
                       </select>
                     </label>
                   </li>
                   <li><label for="claim">Status
                       <select id="Status" name="Status">
-                        <option value="" disabled selected>- Select Status -</option>
+                        <option value="" disabled>- Select Status -</option>
                         <option value="1">Type 1</option>
-                        <option value="2">Type 2</option>
+                        <option value="2" selected>Active</option>
                         <option value="3">Type 3</option>
                       </select>
                     </label>
                     <label for="Primary">Primary
-                      <input type="text" id="Primary" name="Primary" accesskey="c" tabindex="2">
+                      <input type="text" id="Primary" placeholder="Lorium Epsom" name="Primary" accesskey="c" tabindex="2">
                     </label>
                   </li>
                   <li class="w100">
                     <label for="Policy">Policy
-                      <input type="text" id="Policy" name="Policy" tabindex="2">
+                      <input type="number" id="Policy" placeholder="874892948" name="Policy" tabindex="2">
                     </label>
                   </li>
                   <li>
                     <label for="Coverage">Coverage
                       <select id="Coverage" name="Coverage">
-                        <option value="" disabled selected>- Select Status -</option>
+                        <option value="" disabled>- Select Status -</option>
                         <option value="1">Type 1</option>
                         <option value="2">Type 2</option>
-                        <option value="3">Type 3</option>
+                        <option value="3" selected>Type 3</option>
                       </select>
                     </label>
-                    <label for="CoverageStatus">CoverageStatus
-                      <select id="CoverageStatus" name="CoverageStatus">
-                        <option value="" disabled selected>- Select Status -</option>
+                    <label for="CoverageStatus1">Status
+                      <select id="CoverageStatus1" name="CoverageStatus1">
+                        <option value="" disabled>- Select Status -</option>
                         <option value="1">Type 1</option>
                         <option value="2">Type 2</option>
-                        <option value="3">Type 3</option>
+                        <option value="3" selected>Type 3</option>
                       </select>
                     </label>
                   </li>
 
                   <li>
                     <label for="paidoutdate">Paid Out Date
-                      <input type="text" id="paidoutdate" name="paidoutdate" tabindex="2">
+                      <input type="date" id="paidoutdate" name="paidoutdate" tabindex="2">
                     </label>
                     <label for="Limits">Limits
                       <input type="text" id="Limits" name="Limits" tabindex="2">
@@ -202,15 +201,15 @@
                   </li>
                   <li>
                     <label for="Phone">Phone
-                      <input type="text" id="Phone" name="Phone" tabindex="2">
+                      <input type="number" id="Phone" name="Phone" tabindex="2">
                     </label>
                     <label for="Fax">Fax
-                      <input type="text" id="Fax" name="Fax" tabindex="2">
+                      <input type="number" id="Fax" name="Fax" tabindex="2">
                     </label>
                   </li>
                   <li class="w100">
                     <label for="Email">Email
-                      <input type="text" id="Email" name="Email" tabindex="2">
+                      <input type="email" id="Email" name="Email" tabindex="2">
                     </label>
                   </li>
                 </ul>
@@ -223,14 +222,60 @@
         <!-- item-1's 4th child -->
         <div class="item-2">
             <!-- EIM-Attorney -->
-            <app-eim-attorney></app-eim-attorney>
+            <div class="eim-insurance-cont">
+                <div class="title-bar" aria-hidden="true"></div>
+                <h3>EIM Attorney <a href="JavaScript:Void(0);" title="Add Insurance" class="img-btn-add float-right"><img
+                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+                <div class="geico-cont">
+                  <h4>[attorney company extra longname]</h4>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
+                </div>
+                <div class="geico-cont-body">
+                    <ul>
+                        <li class="w100"><p>Attorney <span>[adjuster_firstname_longname]</span></p></li>
+                        <li><p>Phone<span>123-456-7890</span></p><p>Fax<span>123-456-7890</span></p></li>
+                        <li class="w100"><p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p></li>
+                        <li class="w100"><p>Address<span>Address 12345 Main Street, Suite 4, Cityname ST 00123</span></p></li>
+                        <li><p>Status<span>Inactive</span></p><p>Next Court Date<span>[value]</span></p></li>      
+                        <li class="w100"><p>Legal Assistant<span>[legal_firstname_longname]</span></p></li>
+                        <li class="w100"><p>Linked to Third Party <span>[thirdparty_company_longname]</span></p></li>                                     
+                      </ul>
+                </div>
+              </div>
               <!-- /EIM-Attorney -->
         </div>
         <!-- /item-1's 4th child -->
         <!-- item-1's 5th child -->
         <div class="item-2">
             <!-- TP-Attorney -->
-            <app-tp-attorney></app-tp-attorney>
+            <div class="tp-insurance-cont">
+                <div class="title-bar" aria-hidden="true"></div>
+                <h3>TP Attorney <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
+                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
+                <div class="geico-cont">
+                  <h4 class="text-left">[attorney company longname]</h4>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
+                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
+                </div>
+                <div class="geico-cont-body">
+                    <ul>
+                      <li class="w100"><p>Attorney <span>[adjuster_firstname_longname]</span></p></li>
+                      <li><p>Phone<span>123-456-7890</span></p><p>Fax<span>123-456-7890</span></p></li>
+                      <li class="w100"><p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p></li>
+                      <li class="w100"><p>Address<span>Address 12345 Main Street, Suite 4, Cityname ST 00123</span></p></li>
+                      <li><p>Status<span>Inactive</span></p><p>Next Court Date<span>[value]</span></p></li>      
+                      <li class="w100"><p>Legal Assistant<span>[legal_firstname_longname]</span></p></li>
+                      <li class="w100"><p>Linked to Third Party <span>[thirdparty_company_longname]</span></p></li>                                     
+                    </ul>
+                  </div>
+              </div>
               <!-- /TP-Attorney -->
         </div>
         <!-- /item-1's 5th child -->
@@ -241,8 +286,12 @@
     <div class="safe-zone">
       <div class="item-1 item-1b">
         <app-special-handling></app-special-handling>
-        <app-special-handling></app-special-handling>
-        <app-special-handling></app-special-handling>
+        <!-- Summary Tracker -->
+<app-summary-tracker></app-summary-tracker>
+        <!-- /Summary Tracker -->
+        <!-- Queued Actions -->
+<app-queued-actions></app-queued-actions>
+        <!-- /Queued Actions -->
       </div>
 
 
