@@ -21,6 +21,9 @@
     margin: 0;
     padding: 0;
 }
+/* * {
+    border: 1px solid red;
+} */
 h1, h2, h3, h4, h5, h6, img, div, section, ul, ol, li {
     margin: 0;
     padding: 0;
@@ -89,8 +92,6 @@ body {
 .container {
     display: flex;
     flex-wrap: wrap; }
-.item {
-    border: 0px solid cyan; }
 .brand-logo {
     padding: 0.5rem 1rem; }
 #mainHeader .gnav, #mainHeader .primary-nav { 
@@ -125,6 +126,7 @@ body {
 
 .primary-nav-cont {
     background-color: #555;
+    width: 100%;
 }
 .primary-nav-cont h2 {
     color: var(--white);
@@ -136,15 +138,16 @@ body {
 .primary-nav ul li { 
     display: inline-block;
     background-color: #333333;
-    padding: 0 2rem;
+    padding: 0;
   transition: background 0.2s;
      transform: skew(20deg); 
     height: 2rem;
     line-height: 2rem;
     margin-right: 0.5rem; }
-.primary-nav ul li.active-tab {
+.primary-nav  ul li:hover {
     background-color: #A9A8AD;
-    }
+    transition: 0.7s;
+}
 .primary-nav ul li.active-tab a {
     color: var(--black);
     }
@@ -153,9 +156,23 @@ body {
     text-decoration: none;
     font-size: 0.9rem;    
     transform: skew(-20deg); 
-    display: inline-block;    
+    display: inline-block; 
+    padding: 0 1.5rem; 
      }
+.primary-nav ul li.active-tab {
+background-color: #A9A8AD;
+cursor: default;
+}
 
+.accident-icon-align a img {
+    vertical-align: text-bottom;
+    margin-left: 4px;
+}
+.save-type {
+    vertical-align: middle;
+    margin-left: 4px;
+    display: inline-block;
+}
 
 
 /* innerCont Styles */
@@ -164,7 +181,6 @@ body {
     flex-direction: column;
 }
 .item-0 {
-    border: 0px solid blue;
     padding: 20px;
 }
 #innerCont .container {
@@ -290,7 +306,6 @@ body {
 }
 
 .item-1 {
-    border: 0px solid black;
     padding-bottom: 10px;
    
     display: flex;
@@ -322,8 +337,6 @@ body {
     }
 
 .item-2 {
-    border: 0px solid red;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -332,19 +345,13 @@ body {
     width: 100%;
     display: inline-flex;
     justify-content: flex-start;
-    border: 0px solid green;
     padding: 20px 20px 0px 5px; 
 }
 .item-2:not(:first-child) { 
     width: 50%;
 }
-
-.item-3 {
-    border: 0px solid red;
-}
 .item-3a {
-    flex: 3 0 auto;
-         
+    flex: 3 0 auto;         
 }
 
 .item-3b {
@@ -396,7 +403,6 @@ body {
     align-items: center;
 }
 .vdl-cont > div {
-    border: 0px solid red;
     margin-left: 1rem;    
 }
 
@@ -495,7 +501,6 @@ body {
 }
 
 .geico-cont-body ul li p {
-    border: 0px solid green;
     font-size: 0.8rem;
     width: 49%;
     color: var(--half-black);
@@ -508,7 +513,6 @@ body {
     width: 100%;
 }
 .geico-cont-body ul li p span {
-    border: 0px solid green;
     padding-left: 1.5rem;
     color: var(--tertiary-color);
     font-weight: normal;
@@ -547,12 +551,17 @@ body {
         margin-left: 1rem;
     }
 
+
+
+
 /* shead-cont  */
 .shead-cont h3 {
     cursor: pointer;
 }
 
-    /* Debug(temp) */
-    .brdrs {
-        border: 1px solid red;
-      }
+/* Media Queries for screen < 1400px */
+@media only screen and (max-width : 1400px) {
+    #mainWrapper {
+        min-width:1399px;
+    }
+}
