@@ -226,6 +226,7 @@ cursor: default;
 }
 .case-details ul li p, .case-details label  {
     font-size: 0.8rem;
+    color: var(--black);
 }
 .case-details ul li p span {
     display: inline-block;
@@ -503,8 +504,7 @@ cursor: default;
 .geico-cont-body ul li p {
     font-size: 0.8rem;
     width: 49%;
-    color: var(--half-black);
-    font-weight: bold;
+    color: var(--black);
 }
 .geico-cont-body ul li p a {
     margin-right: 5px;
@@ -514,7 +514,7 @@ cursor: default;
 }
 .geico-cont-body ul li p span {
     padding-left: 1.5rem;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
     font-weight: normal;
 }
 
@@ -541,13 +541,12 @@ cursor: default;
     .geico-cont-body  label {
         font-size: 0.8rem;
         width: 49%;
-        color: var(--half-black);
-        font-weight: bold;
+        color: var(--black);
     }
     .geico-cont-body ul li.w100 label {
         width: 100%;
     }
-    .geico-cont-body input[type="text"], .geico-cont-body select {        
+    .geico-cont-body input, .geico-cont-body select {        
         margin-left: 1rem;
     }
 
