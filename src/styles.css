@@ -547,34 +547,7 @@ body {
         margin-left: 1rem;
     }
 
-/* shead-cont  */
-.toggle-btn {
-    float: right;
-    border: 1px solid red;
-}
-.shead-cont-body {
-    display: block;
-}
 
-footer {
-    background-color: var(--black);
-    color: var(--half-white);
-    font-size: 0.7rem;
-    padding: 10px 20px;
-    margin-top: 2rem;
-}
-.footer-cont {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-footer a {
-    color: var(--half-white);
-}
-footer a:hover {
-    color: var(--primary-color);
-}
 
     /* Debug(temp) */
     .brdrs {
