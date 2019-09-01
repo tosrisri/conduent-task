@@ -12,7 +12,11 @@ footer {
 }
 
 footer a {
-    color: var(--half-white);
+    color: #999999;
+    text-decoration: none;
+}
+footer a:first-child {
+    margin-left: 2rem;
 }
 footer a:hover {
     color: var(--primary-color);
