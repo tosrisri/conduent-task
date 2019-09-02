@@ -338,9 +338,9 @@ cursor: default;
     }
 
 .item-2 {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 .item-2:first-child {
     width: 100%;
@@ -449,7 +449,7 @@ cursor: default;
     padding: 10px;
     margin: 10px 0 5px 15px;
     border: 1px solid var(--tertiary-color);
-    width: 100%;
+    /* width: 100%; */
 }
 .title-bar {
     background-color: var(--tertiary-color);
@@ -508,14 +508,28 @@ cursor: default;
 }
 .geico-cont-body ul li p a {
     margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .geico-cont-body ul li.w100 p {
     width: 100%;
 }
-.geico-cont-body ul li p span {
+.geico-cont-body ul li p span:first-child {
+    color: var(--black);
+    display: inline-block;
+    min-width: 100px;
+}
+.geico-cont-body ul li p span:nth-of-type(2) {
     padding-left: 1.5rem;
     color: var(--secondary-color);
     font-weight: normal;
+}
+
+/* Form labels alignment */
+.geico-cont-body label span {
+    border: px solid;
+    min-width: 110px;
+    display: inline-block;
 }
 
 /* tp-insurance-cont styles */
@@ -523,7 +537,8 @@ cursor: default;
     padding: 10px;
     margin: 10px 15px 5px 10px;
     border: 1px solid var(--tertiary-color);
-    width: 100%; }
+    /* width: 100%;  */
+}
 
     .ins-name-cont {
         background-color: var(--white);
@@ -547,7 +562,7 @@ cursor: default;
         width: 100%;
     }
     .geico-cont-body input, .geico-cont-body select {        
-        margin-left: 1rem;
+        margin-left: 0;
     }
 
 

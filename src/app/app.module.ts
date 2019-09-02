@@ -11,6 +11,8 @@ import { TpAttorneyComponent } from './tp-attorney/tp-attorney.component';
 import { EimAttorneyComponent } from './eim-attorney/eim-attorney.component';
 import { QueuedActionsComponent } from './queued-actions/queued-actions.component';
 import { SummaryTrackerComponent } from './summary-tracker/summary-tracker.component';
+import { TpInsuranceComponent } from './tp-insurance/tp-insurance.component';
+import { EimInsuranceComponent } from './eim-insurance/eim-insurance.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SummaryTrackerComponent } from './summary-tracker/summary-tracker.compo
     TpAttorneyComponent,
     EimAttorneyComponent,
     QueuedActionsComponent,
-    SummaryTrackerComponent
+    SummaryTrackerComponent,
+    TpInsuranceComponent,
+    EimInsuranceComponent
   ],
   imports: [
     BrowserModule

@@ -49,234 +49,29 @@
         <!-- item-1's 2nd child -->
         <div class="item-2">
           <!-- EIMI -->
-          <div class="eim-insurance-cont">
-            <div class="title-bar" aria-hidden="true"></div>
-            <h3>EIM Insurance <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
-                  src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
-            <div class="geico-cont">
-              <h4>Geico</h4>
-              <a href="#" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
-              <a href="#" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
-              <a href="#" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
-              <a href="#" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
-              <a href="#" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
-            </div>
-            <div class="geico-cont-body">
-              <ul>
-                <li class="w100">
-                  <p>Main Phone Number<span> 800-207-7847</span></p>
-                </li>
-                <li>
-                  <p>Claim<span>1009982736364</span></p>
-                  <p>Type<span>[Claim Type]</span></p>
-                </li>
-                <li>
-                  <p>Status<span>Acknowledged</span></p>
-                  <p>Primacy<span>[value]</span></p>
-                </li>
-                <li>
-                  <p>Policy<span>90099000</span></p>
-                </li>
-                <li>
-                  <p><a href="#" title="some title"><img src="/src/assets/images/icon-s-add.jpg" height="25" width="25"
-                        alt="add" /></a>
-                    <a href="#" title="some title"><img src="/src/assets/images/icon-s-edit.jpg" height="25" width="25"
-                        alt="edit" /></a>
-                    <a href="#" title="some title"><img src="/src/assets/images/icon-s-remove.jpg" height="25"
-                        width="25" alt="remove" /></a>
-                    Coverage<span>MP</span></p>
-                </li>
-
-                <li>
-                  <p>Status <span>Open</span></p>
-                </li>
-                <li class="w100">
-                  <p>Same adjuster for all coverages<span><input type="checkbox" name="sacover" value="cover"></span>
-                  </p>
-                </li>
-                <li class="w100">
-                  <p><a href="#" title="some title"><img src="/src/assets/images/icon-add.jpg" alt="add" /></a>
-                    <a href="#" title="some title"><img src="/src/assets/images/icon-edit.jpg" alt="edit" /></a>
-                    <a href="#" title="some title"><img src="/src/assets/images/icon-remove.jpg" alt="remove" /></a>
-                    Same adjuster for all coverages</p>
-                </li>
-                <li>
-                  <p>Phone<span>123-456-7890</span></p>
-                  <p>Type<span>123-456-7890</span></p>
-                </li>
-                <li class="w100">
-                  <p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <app-eim-insurance></app-eim-insurance>
           <!-- /EIMI -->
         </div>
         <!-- /item-1's 2nd child -->
         <!-- item-1's 3rd child -->
         <div class="item-2 ">
           <!-- TPI -->
-          <div class="tp-insurance-cont">
-            <div class="title-bar" aria-hidden="true"></div>
-            <h3>TP Insurance <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
-                  src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
-            <div class="geico-cont">
-              <h4 class="text-left">[insurance company longname] two line example [insurance company longname]
-                two line example</h4>
-            </div>
-            <div class="geico-cont-body">
-              <form onSubmit="submit()">
-                <ul>
-                  <li class="w100">
-                    <label for="phonenumber">Main Phone Number
-                      <input type="number" id="phonenumber" name="phonenumber" placeholder="000-000-0000" accesskey="p" tabindex="1">
-                    </label>
-                  </li>
-                  <li>
-                    <label for="claim">Claim
-                      <input type="number" id="claim" name="claim" placeholder="1009982736364" accesskey="c" tabindex="2">
-                    </label>
-                    <label for="claim">Type
-                      <select id="claim" name="claim">
-                        <option value="" disabled>- Select Type -</option>
-                        <option value="1">Type 1</option>
-                        <option value="2" selected>Type 2</option>
-                        <option value="3">Type 3</option>
-                      </select>
-                    </label>
-                  </li>
-                  <li><label for="claim">Status
-                      <select id="Status" name="Status">
-                        <option value="" disabled>- Select Status -</option>
-                        <option value="1">Type 1</option>
-                        <option value="2" selected>Active</option>
-                        <option value="3">Type 3</option>
-                      </select>
-                    </label>
-                    <label for="Primary">Primary
-                      <input type="text" id="Primary" placeholder="Lorium Epsom" name="Primary" accesskey="c" tabindex="2">
-                    </label>
-                  </li>
-                  <li class="w100">
-                    <label for="Policy">Policy
-                      <input type="number" id="Policy" placeholder="874892948" name="Policy" tabindex="2">
-                    </label>
-                  </li>
-                  <li>
-                    <label for="Coverage">Coverage
-                      <select id="Coverage" name="Coverage">
-                        <option value="" disabled>- Select Status -</option>
-                        <option value="1">Type 1</option>
-                        <option value="2">Type 2</option>
-                        <option value="3" selected>Type 3</option>
-                      </select>
-                    </label>
-                    <label for="CoverageStatus1">Status
-                      <select id="CoverageStatus1" name="CoverageStatus1">
-                        <option value="" disabled>- Select Status -</option>
-                        <option value="1">Type 1</option>
-                        <option value="2">Type 2</option>
-                        <option value="3" selected>Type 3</option>
-                      </select>
-                    </label>
-                  </li>
-
-                  <li>
-                    <label for="paidoutdate">Paid Out Date
-                      <input type="date" id="paidoutdate" name="paidoutdate" tabindex="2">
-                    </label>
-                    <label for="Limits">Limits
-                      <input type="text" id="Limits" name="Limits" tabindex="2">
-                    </label>
-                  </li>
-                  <li class="w100">
-                    <label for="adjuster2">Same adjuster for all coverages <input type="checkbox" name="adjuster2"
-                        id="adjuster2" value="cover">
-                    </label>
-                  </li>
-                  <li class="w100">
-                    <label for="Adjuster">Adjuster
-                      <input type="text" id="Adjuster" name="Adjuster" tabindex="2">
-                    </label>
-                  </li>
-                  <li>
-                    <label for="Phone">Phone
-                      <input type="number" id="Phone" name="Phone" tabindex="2">
-                    </label>
-                    <label for="Fax">Fax
-                      <input type="number" id="Fax" name="Fax" tabindex="2">
-                    </label>
-                  </li>
-                  <li class="w100">
-                    <label for="Email">Email
-                      <input type="email" id="Email" name="Email" tabindex="2">
-                    </label>
-                  </li>
-                </ul>
-              </form>
-            </div>
-          </div>
+          <app-tp-insurance></app-tp-insurance>
           <!-- /TPI -->
         </div>
         <!-- /item-1's 3rd child -->
         <!-- item-1's 4th child -->
         <div class="item-2">
-            <!-- EIM-Attorney -->
-            <div class="eim-insurance-cont">
-                <div class="title-bar" aria-hidden="true"></div>
-                <h3>EIM Attorney <a href="JavaScript:Void(0);" title="Add Insurance" class="img-btn-add float-right"><img
-                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
-                <div class="geico-cont">
-                  <h4>[attorney company extra longname]</h4>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
-                </div>
-                <div class="geico-cont-body">
-                    <ul>
-                        <li class="w100"><p>Attorney <span>[adjuster_firstname_longname]</span></p></li>
-                        <li><p>Phone<span>123-456-7890</span></p><p>Fax<span>123-456-7890</span></p></li>
-                        <li class="w100"><p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p></li>
-                        <li class="w100"><p>Address<span>Address 12345 Main Street, Suite 4, Cityname ST 00123</span></p></li>
-                        <li><p>Status<span>Inactive</span></p><p>Next Court Date<span>[value]</span></p></li>      
-                        <li class="w100"><p>Legal Assistant<span>[legal_firstname_longname]</span></p></li>
-                        <li class="w100"><p>Linked to Third Party <span>[thirdparty_company_longname]</span></p></li>                                     
-                      </ul>
-                </div>
-              </div>
-              <!-- /EIM-Attorney -->
+          <!-- EIM-Attorney -->
+          <app-eim-attorney></app-eim-attorney>
+          <!-- /EIM-Attorney -->
         </div>
         <!-- /item-1's 4th child -->
         <!-- item-1's 5th child -->
-        <div class="item-2">
-            <!-- TP-Attorney -->
-            <div class="tp-insurance-cont">
-                <div class="title-bar" aria-hidden="true"></div>
-                <h3>TP Attorney <a href="#" title="Add Insurance" class="img-btn-add float-right"><img
-                      src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
-                <div class="geico-cont">
-                  <h4 class="text-left">[attorney company longname]</h4>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-call.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-mail.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-calc.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-stop.jpg" alt="call" /></a>
-                  <a href="JavaScript:Void(0);" title="call"><img src="/src/assets/images/icon-w-edit.jpg" alt="call" /></a>
-                </div>
-                <div class="geico-cont-body">
-                    <ul>
-                      <li class="w100"><p>Attorney <span>[adjuster_firstname_longname]</span></p></li>
-                      <li><p>Phone<span>123-456-7890</span></p><p>Fax<span>123-456-7890</span></p></li>
-                      <li class="w100"><p>Email <span>adjuster_firstname_longname@reallylong.domain.com</span></p></li>
-                      <li class="w100"><p>Address<span>Address 12345 Main Street, Suite 4, Cityname ST 00123</span></p></li>
-                      <li><p>Status<span>Inactive</span></p><p>Next Court Date<span>[value]</span></p></li>      
-                      <li class="w100"><p>Legal Assistant<span>[legal_firstname_longname]</span></p></li>
-                      <li class="w100"><p>Linked to Third Party <span>[thirdparty_company_longname]</span></p></li>                                     
-                    </ul>
-                  </div>
-              </div>
-              <!-- /TP-Attorney -->
+        <div class="item-2 tpa-wrapper">
+          <!-- TP-Attorney -->
+          <app-tp-attorney></app-tp-attorney>
+          <!-- /TP-Attorney -->
         </div>
         <!-- /item-1's 5th child -->
       </div>
@@ -287,10 +82,10 @@
       <div class="item-1 item-1b">
         <app-special-handling></app-special-handling>
         <!-- Summary Tracker -->
-<app-summary-tracker></app-summary-tracker>
+        <app-summary-tracker></app-summary-tracker>
         <!-- /Summary Tracker -->
         <!-- Queued Actions -->
-<app-queued-actions></app-queued-actions>
+        <app-queued-actions></app-queued-actions>
         <!-- /Queued Actions -->
       </div>
 
@@ -301,9 +96,9 @@
   </div>
   <!-- /innerCont-1 -->
 
-<!-- footer -->
-<app-footer></app-footer>
-<!-- /footer -->
+  <!-- footer -->
+  <app-footer></app-footer>
+  <!-- /footer -->
 
 
 </div>
