@@ -4,14 +4,14 @@
         src="/src/assets/images/icon-add.jpg" alt="Add Insurance" /></a></h3>
   <div class="geico-cont">
     <h4 class="text-left">[insurance company longname] two line example [insurance company longname]
-      two line example</h4>
+      two line example {{mainPhoneNumber}} {{inputText}}</h4>
   </div>
   <div class="geico-cont-body">
     <form onSubmit="submit()">
       <ul>
         <li class="w100">
           <label for="phonenumber"><span>Main Phone No.</span>
-            <input type="number" id="phonenumber" name="phonenumber" placeholder="000-000-0000" accesskey="p"
+            <input type="number" id="phonenumber" name="phonenumber" placeholder="000-000-0000" [(ngModel)]="mainPhoneNumber" accesskey="p"
               tabindex="1">
           </label>
         </li>
@@ -79,7 +79,7 @@
         </li>
         <li class="w100">
           <label for="Adjuster"><span>Adjuster</span>
-            <input type="text" id="Adjuster" name="Adjuster" tabindex="2">
+            <input type="text" id="Adjuster" name="Adjuster" [(ngModel)]="inputText" tabindex="2">
           </label>
         </li>
         <li>

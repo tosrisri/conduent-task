@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TpInsuranceComponent implements OnInit {
 
+  inputText: string = "Initial Valus";
+  mainPhoneNumber: number = 1234567890;
+
   constructor() { }
 
   ngOnInit() {
